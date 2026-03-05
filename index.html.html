@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dhakshina Moorthi Portfolio</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#1f1c2c,#928dab);
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(0,0,0,0.7);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+.navbar ul li{
+margin:0 15px;
+}
+
+.navbar ul li a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+}
+
+.navbar ul li a:hover{
+color:cyan;
+}
+
+.icons a{
+margin-left:15px;
+font-size:20px;
+text-decoration:none;
+color:white;
+}
+
+.icons a:hover{
+color:cyan;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:50px;
+text-shadow:0 0 20px cyan;
+animation:float 3s ease-in-out infinite;
+}
+
+header p{
+font-size:20px;
+color:#00ffff;
+}
+
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0px);}
+}
+
+/* PROFILE IMAGE */
+
+.profile-pic{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid cyan;
+object-fit:cover;
+box-shadow:0 0 30px cyan;
+transition:0.5s;
+}
+
+.profile-pic:hover{
+transform:scale(1.1) rotateY(20deg);
+}
+
+/* SECTIONS */
+
+section{
+padding:50px 10%;
+}
+
+h2{
+color:cyan;
+margin-bottom:20px;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.5);
+transition:0.5s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px cyan;
+}
+
+/* SKILLS */
+
+.skills span{
+display:inline-block;
+background:cyan;
+color:black;
+padding:8px 15px;
+margin:5px;
+border-radius:20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.skills span:hover{
+background:white;
+transform:scale(1.2);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.4);
+}
+.social-icons{
+margin-top:20px;
+}
+
+.social-icons a{
+margin:0 10px;
+}
+
+.social-icons img{
+width:35px;
+transition:0.3s;
+}
+
+.social-icons img:hover{
+transform:scale(1.3);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#project">Project</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HEADER -->
+
+<header>
+
+<img src="myphoto.jpg.jpg" class="profile-pic">
+
+<h1>DHAKSHINA MOORTHI M</h1>
+<p>Python Developer</p>
+<div class="social-icons">
+
+<a href="mailto:dhakshinadhakshina4@gmail.com">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+</a>
+
+<a href="https://github.com/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png">
+</a>
+
+<a href="https://www.linkedin.com/in/dhakshina-moorthi-884720350" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+</a>
+
+</div>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about">
+<h2>About Me</h2>
+
+<div class="card">
+Motivated and detail-oriented Junior Software Developer with strong knowledge of programming fundamentals and software development principles. Skilled in building web and backend applications using modern technologies.
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="card">
+
+🎓 MCA (2023–2025) – CGPA: 7.6 <br><br>
+🎓 B.Sc Biotechnology (2019–2022) – CGPA: 7.4 <br><br>
+🏫 HSC – 57% <br>
+🏫 SSLC – 80%
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="card skills">
+
+<span>Python</span>
+<span>Pandas</span>
+<span>Matplotlib</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>MySQL</span>
+<span>Networking</span>
+
+</div>
+
+</section>
+
+<!-- PROJECT -->
+
+<section id="project">
+
+<h2>Major Project</h2>
+
+<div class="card">
+
+<b>Mental Fatigue Detection System using Deep Learning</b><br><br>
+
+✔ Real-time face, eye and yawning detection using OpenCV<br>
+✔ CNN-LSTM model for fatigue prediction<br>
+✔ Automatic alert system with email & GPS<br>
+✔ Designed for driver safety monitoring<br><br>
+
+<b>Technologies:</b> Python, OpenCV, TensorFlow, Deep Learning
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+📱 9384141660 <br><br>
+📧 dhakshinadhakshina4@gmail.com <br><br>
+
+<a href="https://www.linkedin.com/in/dhakshina-moorthi-884720350" target="_blank">LinkedIn Profile</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Dhakshina Moorthi | Portfolio Website
+
+</footer>
+
+</body>
+</html>
